@@ -1,0 +1,41 @@
+.book-button{
+  background-color: #8c7042;
+  border: none;
+  color: white;
+}
+.book-button:hover{
+  background-color: #e2dbcf;
+}
+
+
+.date-number{
+  width: 15%;
+  border-right: 2px solid #8c7042;
+}
+.bookName{
+  width: 35%;
+  border-right: 2px solid #8c7042;
+}
+.star-review{
+  width: 60%;
+}
+.table_line{
+  display: table;
+  width: 100%;
+}
+.block{
+  display: table-cell;
+}
+
+.headline{
+  font-size: 16px;
+  background-color: #e2dbcf;
+}
+
+body{
+  font-family: 'Kiwi Maru', serif;
+}
+
+.input-group-text{
+  background-color: #e2dbcf;
+}

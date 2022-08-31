@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book-list</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="book-list.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark" style="background-color: #8c7042; font-family: 'Kiwi Maru', serif;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">My Book List</a>
+            </div>
+        </nav>
+    </header>
+ 
+
+    <div class="container pt-5">
+        <h1>My Book List📚</h1>
+        <p class="pt-3">ここは読んだ本の記録を残すことができます。<br>日付・本のタイトル・本についてのコメントを書いて追加ボタンを押してください。<br>※全てを入力しなければ反映されません。</p>
+        <h5 class="mt-5">本の追加</h5>
+        <div class="input-group input-info">
+            <span class="input-group-text">読んだ日</span>
+            <input type="date" name="readday" id="read-date" class="form-control readdate">
+            <span class="input-group-text">タイトル</span>
+            <input type="text" class="form-control input-name w-50" id="book-name" maxlength="30">
+
+        </div>
+        <div class="input-group mt-3">
+          <span class="input-group-text">コメント</span>
+          <input type="text" id="text-review" class="form-control" maxlength="40"></input>
+        </div>
+        
+        <button id="add-book" class="book-button btn mt-3">追加</button>
+        
+
+        <div class="table table-block">
+          <div class="table_line headline mt-5">
+              <div class="date-number block p-2">DATE</div>
+              <div class="bookName block p-2">TITLE</div>
+              <div class="star-review block p-2">COMMENT</div>
+          </div>
+          <div class="table_line">
+            <div id="day-number" class="date-number block"></div>
+            <div id="book-Name" class="bookName block"></div>
+            <div id="review-block" class="star-review block"></div>
+          </div>
+          
+        </div>
+
+
+    </div>
+    <script src="book-list.js"></script>
+</body>
+</html>
